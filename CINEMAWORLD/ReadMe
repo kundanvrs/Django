@@ -1,0 +1,19 @@
+Virtual environment Setup
+==========================
+install python3
+python3 -m venv venv_name
+
+source venv_name/bin/activate
+deactivate
+
+pip install django
+Create Djangoproject
+====================
+django-admin startproject first_project
+cd first_project
+python manage.py startapp first_app
+
+Run DjangoProject
+=================
+python manage.py runserver
+http://localhost:8000
