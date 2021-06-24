@@ -1,0 +1,52 @@
+Virtual environment Setup
+==========================
+install python3
+python3 -m venv django_venv
+
+source django_venv/bin/activate
+deactivate
+
+pip install django
+Create Djangoproject
+====================
+django-admin startproject first_project
+cd first_project
+python manage.py startapp first_app
+
+Run DjangoProject
+=================
+python manage.py runserver 8080
+python manage.py runserver
+http://localhost:8000
+
+
+Django Super user
+==================
+python manage.py createsuperuser
+http://localhost:8000/admin
+
+sqlite3 migrate
+===============
+python manage.py makemigrations
+python manage.py makemigrations app_name
+python manage.py migrate
+
+""" Additional code for ForeignKey"""
+topic = models.ForeignKey(
+'Topic',
+on_delete = models.CASCADE,
+)
+
+Support installation setup
+==========================
+pip install -r requirements.txt
+
+
+Django flow diagram -----------------------------------------
+
+python manage.py startapp first_app
+~add app to settings.py  in installed apps
+~add views in app from views.py
+~map this view to urls.py (using url mapping of include function)
+
+Add templates 
