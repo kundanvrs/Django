@@ -1,0 +1,29 @@
+
+{% block header %}
+<div class="p-3 mb-1 bg-primary">
+    <h1 class="display-4 text-center" style="color:yellow;">DAV PUBLIC SCHOOL</h1>
+</div>
+<header class="p-3 bg-warning text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0  text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="{% url 'homepage' %}" class="nav-link px-2 text-danger">Home</a></li>
+          <li><a href="{% url 'noticeboard' %}" class="nav-link px-2 text-dark">Notice</a></li>
+          <li><a href="#" class="nav-link px-2 text-dark">Acadmics</a></li>
+          <li><a href="{% url 'student' %}" class="nav-link px-2 text-dark">Student</a></li>
+          <li><a href="{% url 'faculty' %}" class="nav-link px-2 text-dark">Faculty</a></li>
+        </ul>
+
+        <div class="text-end">
+          <a class="btn btn-outline-light me-2" href="{% url 'handlelogin' %}" role="button">Login</a>
+          <a class="btn btn-secondary" href="{% url 'handlesignup' %}" role="button">Sign-Up</a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+{% endblock %}
