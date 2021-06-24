@@ -1,0 +1,38 @@
+DASHBOARD
+-Homepage (only a search bar & navigation panel)
+ORIGIN
+GENERE
+
+-Login/logout
+-Admin
+
+User-
+profile(age,sex,profession,name,email)
+Reviews Update
+Add reviews
+
+Admin
+add/update reviews
+delete movie
+upload movies
+delete user
+
+movies-
+title
+year
+date_published
+genre
+duration
+country
+language
+director
+writer
+production_company
+actors
+description
+votes
+reviews_from_users	
+reviews_from_critics
+comments
+add coments/rating
+
